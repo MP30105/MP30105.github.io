@@ -1,9 +1,5 @@
 # MP30105.github.io
-Horario de Matthew Peña Romero
 
-MP30105.github.io
-
-<!DOCTYPE html>
 <img src="Matthew.jpg" alt="Foto Perfil">
 <h1>Matthew Peña Romero </h1>
 <p> Mi nombre es Matthew Peña Romero, Tengo 21 años, 
@@ -36,4 +32,4 @@ table, th, td {
   <td>7:00AM - 8:50AM</td>
 </tr>
 </table>
-</html>
+
