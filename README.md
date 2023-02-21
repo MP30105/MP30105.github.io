@@ -1,35 +1,34 @@
 # MP30105.github.io
 
-<img src="Matthew.jpg" alt="Foto Perfil">
-<h1>Matthew Peña Romero </h1>
-<p> Mi nombre es Matthew Peña Romero, Tengo 21 años, 
-estudio en la Universidad Autónoma de Santo Domingo, 
-Estudié el bachillerato en el Dominico Americano School
-y estoy cursando actualmente la carrera de Informática.</p>
-
-
-<h2>Este es mi horario</h2>
-<style>
-table, th, td {
-  border:1px solid black;
-}
-</style>
-<table style="width:100%">
- <tr>
-  <th>Codigo</th>
-  <th>NRC</th>
-  <th>Asignatura</th> 
-  <th>Profesor</th>
-  <th>Dias</th>
-  <th>Hora</th>
-</tr>
-<tr>
-  <td>INF-5170</td>
-  <td>19386</td>
-  <td>Laboratorio de Lenguaje de Programación III</td>
-  <td>Radhames Silverio Gonzalez</td>
-  <td>Miércoles</td>
-  <td>7:00AM - 8:50AM</td>
-</tr>
-</table>
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Matthew Pena Romero 100613608  </title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f5f5f5;
+			text-align: center;
+			padding-top: 50px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 12px 24px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 16px;
+			transition: background-color 0.3s;
+		}
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Trabajos</h1>
+	<button onclick="window.location.href = 'Practica_u1/Horario.html';">Biografia</button>
+	<button onclick="window.location.href = 'Practica_u2/Definiciones de Tags.html';">Definicones de Tags</button>
+</body>
+</html>
