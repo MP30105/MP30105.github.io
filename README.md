@@ -1,7 +1,3 @@
-# MP30105.github.io
-
-[mp30105](https://mp30105.github.io/)
-
 <!DOCTYPE html>
 <html>
 <head>
