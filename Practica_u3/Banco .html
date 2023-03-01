@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+   a#categoria {
+       /* border: 1px solid; */
+       padding-right: 0!important;
+       padding-left: 0!important;
+       min-width: 0!important;
+       width: fit-content;
+    }
+.menu {
+    width: 300px;
+    height: 800px;
+    max-height: 0;
+    position: relative;
+    z-index: 4;
+    clear: both;
+    -webkit-transition: max-height .2s ease-out;
+    transition: max-height .2s ease-out;
+}
+</style>
+</head>
+<body>
+<div class="navbar">
+     <div class="dropdown">
+  <button class="dropbtn" onclick="show('myDropdown')">Cuentas
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-de-ahorro-en-pesos">Cuenta de Ahorro en Peso</a>
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-ahorro-m%C3%A1s">Cuenta de Ahorro Mas</a>
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-de-ahorro-infantil">Cuenta de Ahorro Infantil</a>
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-de-ahorro-infantil-en-d%C3%B3lares">Cuenta de Ahorro Infantil en Dolares</a>
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-de-ahorro-preserva">Cuenta de Ahorro Preserva</a>
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-de-ahorro-en-d%C3%B3lares">Cuenta de Ahorro en Dolares</a>
+    <a href="https://www.banreservas.com/personal/cuentas/ahorro/cuenta-de-ahorro-en-euros">Cuentas de Ahorro en Euros</a>
+    <a href="https://www.banreservas.com/personal/cuentas/corrientes/cuenta-corriente-personal">Cuentas Corriente Personal</a>
+    <a href="https://www.banreservas.com/personal/cuentas/corrientes/cuenta-corriente-m%C3%A1s-personal">Cuenta Corriente Mas Personal</a>
+    <a href="https://www.banreservas.com/personal/cuentas/soluciones-digitales/cuenta-mio-banreservas">Cuenta Mio Banreservas</a>
+  </div>
+  </div> 
+ 
+
+  <div class="dropdown">
+  <button class="dropbtn" onclick="show('myDropdown1')">Inversiones
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown1">
+    <a href="https://www.banreservas.com/personal/inversiones/certificados/certificado-financiero-en-pesos">Certificados Financieros en Pesos</a>
+    <a href="https://www.banreservas.com/personal/inversiones/certificados/dep%C3%B3sito-a-plazo-en-d%C3%B3lares-y-euros">Deposito a Plazo en dolares y euros</a>
+    <a href="https://www.banreservas.com/personal/inversiones/mercado-de-valores/inversiones-en-t%C3%ADtulos-valores">Inversiones en Titulos-Valores</a>
+    <a href="https://www.banreservas.com/personal/inversiones/mercado-de-valores/fondos-de-inversi%C3%B3n">Fondo de Inversion</a>
+  </div>
+  </div> 
+  
+   <div class="dropdown">
+  <button class="dropbtn" onclick="show('myDropdown2')">Tarjetas
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown2">
+    <a href="https://www.banreservas.com/personal/tarjetas/d%C3%A9bito/mastercard-d%C3%A9bito-d%C3%B3lares">Mastercard Debito Dolares</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/d%C3%A9bito/mastercard-d%C3%A9bito-gold">Mastercard Debito Gold</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/d%C3%A9bito/mastercard-d%C3%A9bito-platinum">Mastercard Debito Platinum</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/d%C3%A9bito/mastercard-d%C3%A9bito-standard">Mastercard Debito Standard</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/tarjeta-de-cr%C3%A9dito-visa-ser">Tarjeta de Credio Visa ser</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/credim%C3%A1s-banreservas">Credimas Banreservas</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/mastercard-black">Mastercard Black</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/visa-flotilla-personal">Visa Flotilla Personal</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/visa-infinite">Vosa Infinite</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/visa-platinum-universe">Visa Platinum Universe</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/visa-y-mastercard-cl%C3%A1sica">Visa y Mastercard Clasica</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/visa-y-mastercard-gold">Visa y Mastercard Gold</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/visa-y-mastercard-platinum">Visa y Mastercard Platinum</a>
+    <a href="https://www.banreservas.com/personal/tarjetas/cr%C3%A9dito/tarjeta-de-cr%C3%A9dito-preserva">Tarjeta de credito Perserva</a>    
+  </div>
+  </div> 
+  
+  <div class="dropdown">
+  <button class="dropbtn" onclick="show('myDropdown3')">Prestamos
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown3">
+    <a href="https://www.banreservas.com/personal/prestamos/personales/pr%C3%A9stamos-de-consumo">Prestamos de Consumo</a>
+    <a href="https://www.banreservas.com/personal/prestamos/personales/vacaciones-felices">Vacaciones Felices</a>
+    <a href="https://www.banreservas.com/personal/prestamos/personales/educaci%C3%B3n-y-cultura">Educacion y Cultura</a>
+    <a href="https://www.banreservas.com/personal/prestamos/personales/empleado-feliz">Empleado Feliz</a>
+    <a href="https://www.banreservas.com/personal/prestamos/personales/sueldo-m%C3%A1s">Sueldo Mas</a>
+    <a href="https://www.banreservas.com/personal/prestamos/personales/pensionado-feliz">Pensionado Feliz</a>
+    <a href="https://www.banreservas.com/personal/prestamos/personales/pr%C3%A9stamos-en-d%C3%B3lares">Prestamos en Dolares</a>
+    <a href="https://www.banreservas.com/personal/prestamos/hipotecarios/pr%C3%A9stamos-hipotecarios">Prestramos Hipotecarios</a>
+    <a href="https://www.banreservas.com/personal/prestamos/hipotecarios/pr%C3%A9stamos-hipotecarios-para-residentes-en-el-extranjero">Prestramos Hipotecarios para residentes en el extranjero</a>
+    <a href="https://www.banreservas.com/personal/prestamos/vehiculos/pr%C3%A9stamos-veh%C3%ADculos-nuevos">Prestamos Vehiculos Nuevos</a>
+    <a href="https://www.banreservas.com/personal/prestamos/vehiculos/pr%C3%A9stamos-veh%C3%ADculos-usados">Prestamos Vehiculos Usados</a>
+  </div>
+  </div> 
+
+
+<div class="dropdown">
+  <button class="dropbtn" onclick="show('myDropdown4')">Seguros
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown4">
+    <a href="https://www.banreservas.com/personal/seguros/seguros-de-personas/accidentes-personales">Accidentes Personales</a>
+    <a href="https://www.banreservas.com/personal/seguros/seguros-de-personas/asistencia-funeraria">Asistencia Funeraria</a>
+    <a href="https://www.banreservas.com/personal/seguros/seguros-de-personas/seguro-m%C3%A9dico-internacional-just">Seguro Medico Internacional Just</a>
+    <a href="https://www.banreservas.com/personal/seguros/seguros-de-personas/viajes-reservas">Viajes Reservas</a>
+    <a href="https://www.banreservas.com/personal/seguros/seguros-de-personas/vida-individual-en-pesos-y-d%C3%B3lares">Vida Individual en Pesos y Dolares</a>
+    <a href="https://www.banreservas.com/personal/seguros/seguros-de-personas/vida-reservas">Vida Reservas</a>
+    <a href="https://www.banreservas.com/personal/seguros/riegos-generales/rescate-de-prisa">Rescte De Prisa</a>
+    <a href="https://www.banreservas.com/personal/seguros/riegos-generales/veh%C3%ADculos-de-motor">Vehiculode Motor</a>
+    <a href="https://www.banreservas.com/personal/seguros/riegos-generales/vivienda-segura">Vivienda Segura</a>
+  </div>
+  </div> 
+   <div class="dropdown">
+  <button class="dropbtn" onclick="show('myDropdown5')"> Remesas, Impuestos y Servicios
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown5">
+    <a href="https://www.banreservas.com/personal/remesas-impuestos-y-servicios">Acceder</a>
+   
+  </div>
+  </div> 
+<script>
+ 
+
+var array = ["myDropdown","myDropdown1","myDropdown2","myDropdown3","myDropdown4","myDropdown5"];
+
+
+function show(id){
+  document.getElementById(id).classList.toggle("show");
+  disabled(id);
+}
+
+function disabled(id){
+
+
+  array.forEach(function(id_control) {
+
+
+    if(id_control != id){
+      var myDropdown = document.getElementById(id_control);
+
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+    }
+
+
+  });
+
+
+
+
+
+}
+
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  document.getElementById("myDropdown1").classList.toggle("show");
+  document.getElementById("myDropdown2").classList.toggle("show");
+  document.getElementById("myDropdown3").classList.toggle("show");
+  document.getElementById("myDropdown4").classList.toggle("show");
+  }
+
+
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+<div id="pollo" class="container_apoy">\
+<h1>_______________________</h1>
+<h1> Banco Nacional De Los Creativos</h1>
+<p> El banco de todos y para todos</p>
+
+
+<ul class="contact-list">
+                                            <li>
+                                                <i class="fas fa-phone-alt">
+                                                </i>
+                                                <a href="tel:8099602121">Presione para el Telefono
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-map-marker-alt">
+                                                </i>
+                                                <a href="/mapa">Oficinas
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <i class="fas fa-envelope">
+                                                </i>
+                                                <a href="mailto:matthewpena0105@gmail.com">Contacto
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:matthewpena0105@gmail.com">Inversiones
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="mailto:matthewpena0105@gmail.com">Inversiones Extranjeras 
+                                                
+                                                
+                                                
+                                                </a>
+                                            </li>
+                                        </ul>
+</div>
+<img src="ejemplos.png" alt="Ejemplo de codigo" style="width:1250px;height:800px;">
+</body>
+</html>
