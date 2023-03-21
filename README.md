@@ -30,5 +30,6 @@
 	<button onclick="window.location.href = 'Practica_u2/Definiciones de Tags.html';">Definicones de Tags</button>
 	<button onclick="window.location.href = 'Practica_u3/Banco.html';">Banco</button>
 	<button onclick="window.location.href = 'Practica_u4/luh.html';">Modulo de 10</button>
+	<button onclick="window.location.href = 'Practica_u5/Menu.html';">Modulo de 10</button>
 </body>
 </html>
