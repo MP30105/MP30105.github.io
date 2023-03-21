@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú despegable</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    
+    <nav class="nav">
+        <ul class="list">
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="assets/dashboard.svg" class="list__img">
+                    <a href="https://uasd.edu.do/" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="assets/docs.svg" class="list__img">
+                    <a href="#" class="nav__link">Admisiones</a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="https://soft.uasd.edu.do/UASDVirtualGateway/Default.aspx" class="nav__link nav__link--inside">Estudiante</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://uasdvirtual.uasd.edu.do/diplomados/login/index.php" class="nav__link nav__link--inside">Posgrado/Educacion Continua</a>
+                    </li>
+                </ul>
+
+            </li>
+
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="assets/stats.svg" class="list__img">
+                    <a href="https://www.google.es/maps/place/Universidad+Aut%C3%B3noma+de+Santo+Domingo+(UASD)+-+Sede+Central/@18.4600512,-69.9216955,17z/data=!4m6!3m5!1s0x8ebaf4a942959859:0x5b383b1330fb7fcf!8m2!3d18.4600461!4d-69.9195015!16s%2Fm%2F025s3wd?hl=es" class="nav__link">Location</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__button list__button--click">
+                    <img src="assets/bell.svg" class="list__img">
+                    <a href="https://uasd.edu.do/servicios-uasd/" class="nav__link">Servicios </a>
+                    <img src="assets/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="https://lnnk.in/evgF" class="nav__link nav__link--inside">UASD Virtual</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://soft.uasd.edu.do/ServiciosEnLinea/" class="nav__link nav__link--inside">Servicios en Linea</a>
+                    </li>
+
+                    <li class="list__inside">
+                        <a href="https://soft.uasd.edu.do/planesgrado/" class="nav__link nav__link--inside">Oferta Curicular</a>
+                    </li>
+                </ul>
+
+
+            </li>
+
+
+            <li class="list__item">
+                <div class="list__button">
+                    <img src="assets/message.svg" class="list__img">
+                    <a href="https://www.instagram.com/universidaduasd/" class="nav__link">Instagram</a>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    
+    <script src="main.js"></script>
+</body>
+</html>
