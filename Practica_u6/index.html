@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Registro</title>
+  </head>
+  <body>
+
+
+    <form action="#" id="miFormulario" class="form">
+      <h1 class="text-center">Registro</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="Personal"
+        ></div>
+        <div class="progress-step" data-title="Familiar"></div>
+        <div class="progress-step" data-title="Condiciones"></div>
+        <div class="progress-step" data-title="Internos"></div>
+        <div class="progress-step" data-title="Datos"></div>
+
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="username">Nombre</label>
+          <input type="text" name="nombre" id="nombre" />
+        </div>
+
+
+        <div class="input-group">
+          <label for="position">Apellido</label>
+          <input type="text" name="apellido" id="apellido" />
+        </div>
+
+        <div class="input-group">
+
+        <label for="position">Genero</label>
+
+        <select class="form-select" id="genero_personal" name="genero_personal">
+            <option selected value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+        </select>
+
+
+        </div>
+
+
+        <div class="input-group">
+          <label for="position">Profesion</label>
+          <input type="text" name="profesion" id="profesion" />
+        </div>
+
+
+        <div class="input-group">
+          <label for="position">Localizacion</label>
+          <input type="text" name="localizacion" id="localizacion" />
+        </div>
+
+
+        <div class="input-group">
+          <label for="position">Idioma</label>
+          <input type="text" name="idioma" id="idioma" />
+        </div>
+
+        <div class="input-group">
+          <label for="position">Correo Electronico</label>
+          <input type="text" name="correo" id="correo" />
+        </div>
+
+        <div class="input-group">
+          <label for="position">Telefono</label>
+          <input type="text" name="telefono" id="telefono" />
+        </div>
+
+        <div class="">
+          <a href="#" class="btn btn-next width-50 ml-auto">Siguiente</a>
+        </div>
+      </div>
+
+
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="phone">Nombre Del Familiar</label>
+          <input type="text" name="nombre_familiar" id="nombre_familiar" />
+        </div>
+
+         <div class="input-group">
+          <label for="phone">Apellido Del Familiar</label>
+          <input type="text" name="apellido_familiar" id="apellido_familiar" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Relacion</label>
+          <input type="text" name="relacion" id="relacion" />
+        </div>
+
+         <div class="input-group">
+          <label for="email">Telefono Familiar</label>
+          <input type="text" name="telefono_familiar" id="telefono_familiar" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Correo Familiar</label>
+          <input type="text" name="correo_familiar" id="correo_familiar" />
+        </div>
+
+        <div class="input-group">
+          <label for="email">Detalle Familiar</label>
+          <input type="text" name="detalle_familiar" id="detalle_familiar" />
+        </div>
+
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Atras</a>
+          <a href="#" class="btn btn-next">Siguiente</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+
+        <div class="input-group">
+          <label for="">Enfermedad</label>
+          <input type="text" name="Enfermedad" id="Enfermedad" />
+        </div>
+
+        <div class="input-group">
+          <label for="">Tiempo De Enfermedad</label>
+          <input type="text" name="Enfermedad_tiempo" id="Enfermedad_tiempo" />
+        </div>
+
+        <div class="input-group">
+          <label for="">Detalle Enfermedad</label>
+          <input type="text" name="detalle_enfermedad" id="detalle_enfermedad" />
+        </div>
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Atras</a>
+          <a href="#" class="btn btn-next">Siguiente</a>
+        </div>
+      </div>
+
+      <div class="form-step">
+
+        <div class="input-group">
+          <label for="dob">Fecha De Ingreso</label>
+          <input type="date" name="fecha_ingreso" id="fecha_ingreso" />
+        </div>
+
+
+        <div class="input-group">
+          <label for="password">Centro Medico</label>
+          <input type="texto" name="centro_medico" id="centro_medico" />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Diagnostico</label>
+          <input type="texto" name="diagnostico" id="diagnostico" />
+        </div>
+        
+
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Atras</a>
+          <input type="submit" value="Enviar" class="btn" />
+          <!-- <button type="button" style="border: none;" href="#" class="btn btn-next">Siguiente</button> -->
+        </div>
+      </div>
+
+      <div class="form-step">
+        
+
+        <div id="mostrar_datos">
+          
+        </div>
+
+     
+
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev">Atras</a>
+        </div>
+      </div>
+
+    </form>
+  </body>
+</html>
