@@ -33,5 +33,6 @@
 	<button onclick="window.location.href = 'Practica_u5/Menu.html';">Menu Dinamico</button>
 	<button onclick="window.location.href = 'Practica_u6/index.html';">Formulario</button>
 	<button onclick="window.location.href = 'Practica_u7/index.html';">Generador QR</button>
+	<button onclick="window.location.href = 'Practica_u8/index.html';">Gráficas</button>
 </body>
 </html>
