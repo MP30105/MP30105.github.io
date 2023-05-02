@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Gráficas</title>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+	<div>
+		<h1>Primer Grafico</h1>
+		<P>Ingresar los datos y seguirlos de una coma (Ejemplo1,Ejemplo2,Ejemplo3) </p>
+		<input type="text" id="mislabels" placeholder="Labels Primer Grafico">
+		<input type="text" id="misDatos" placeholder="Datos Primer Grafico">
+	</div>
+
+
+	<div class="chart-container" style="position: relative; width:50vw">
+		<canvas id="miGrafico" style="height:50px;"></canvas>
+	</div>
+
+
+	<div>
+		<h1>Segundo Grafico</h1>
+		<input type="text" id="mislabels2" placeholder="Labels Segundo Grafico">
+		<input type="text" id="misDatos2" placeholder="Datos Segundo Grafico">
+	</div>
+	
+	<div class="chart-container" style="position: relative; width:50vw">
+		<canvas id="miGrafico1" style="height:50px;"></canvas>
+	</div>
+
+
+
+	<script type="text/javascript">
+		document.getElementById("misDatos").addEventListener("change", crearGrafico);
+		document.getElementById("misDatos2").addEventListener("change", crearGrafico2);
+
+
+		// Variable global para almacenar el objeto Chart
+		var miGrafico;
+		var miGrafico1;
+
+
+
+		function crearGrafico() {
+
+		// Si ya existe un gráfico, lo eliminamos
+		if (miGrafico) {
+			miGrafico.destroy();
+		}
+
+
+		  // Obtenemos los datos introducidos por el usuario
+		  var datos = document.getElementById("misDatos").value;
+		  var valores = datos.split(",");
+		  //Obteniendo Labels
+		  var labels_datos = document.getElementById("mislabels").value;
+		  var valores_lables = labels_datos.split(",");
+
+
+		  // Definimos las opciones del gráfico
+		  var opciones = {
+		    responsive: true,
+		    maintainAspectRatio: true
+		  };
+		  
+		  // Creamos el gráfico con Chart.js
+		  var ctx = document.getElementById("miGrafico").getContext("2d");
+		   miGrafico = new Chart(ctx, {
+		    type: 'bar',
+		    data: {
+		      labels: valores_lables,
+		      datasets: [{
+		        label: 'Mis Datos',
+		        data: valores,
+		        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+		        borderColor: 'rgba(255, 99, 132, 1)',
+		        borderWidth: 1
+		      }]
+		    },
+		    options: opciones
+			  });
+		}
+
+
+
+
+
+		function crearGrafico2() {
+
+		// Si ya existe un gráfico, lo eliminamos
+		if (miGrafico1) {
+			miGrafico1.destroy();
+		}
+
+
+		  // Obtenemos los datos introducidos por el usuario
+		  var datos = document.getElementById("misDatos2").value;
+		  var valores = datos.split(",");
+		  //Obteniendo Labels
+		  var labels_datos = document.getElementById("mislabels2").value;
+		  var valores_lables = labels_datos.split(",");
+
+
+		  // Definimos las opciones del gráfico
+		  var opciones = {
+		    responsive: true,
+		    maintainAspectRatio: true
+		  };
+		  
+		  // Creamos el gráfico con Chart.js
+		  var ctx = document.getElementById("miGrafico1").getContext("2d");
+		   miGrafico1 = new Chart(ctx, {
+		    type: 'line',
+		    data: {
+		      labels: valores_lables,
+		      datasets: [{
+		        label: 'Mis Datos',
+		        data: valores,
+		        backgroundColor: 'rgba(255, 99, 132, 0.2)',
+		        borderColor: 'rgba(255, 99, 132, 1)',
+		        borderWidth: 1
+		      }]
+		    },
+		    options: opciones
+			  });
+		}
+
+
+	</script>
+
+
+</body>
+</html>
